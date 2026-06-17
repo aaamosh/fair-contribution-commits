@@ -1,0 +1,4 @@
+commit_attribution = "Codex <267193182+codex@users.noreply.github.com>"
+
+[features]
+codex_git_commit = true

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fair Contribution Commits"
+  short_description: "Credit Codex on real commits"
+  default_prompt: "Use $fair-contribution-commits before creating, amending, squashing, or pushing a Codex-assisted commit."
