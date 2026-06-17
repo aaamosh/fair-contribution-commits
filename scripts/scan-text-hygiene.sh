@@ -11,7 +11,7 @@ if command -v rg >/dev/null 2>&1; then
     fail=1
   fi
 
-  secret_pattern='g[h]o_|g[h]p_|github_pat_|s[k]-[A-Za-z0-9]|xox[baprs]-|TELEGRAM_[A-Z_]*TOKEN|BOT_[A-Z_]*TOKEN|BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY'
+  secret_pattern='g[h]o_|g[h]p_|github[_]pat_|s[k]-[A-Za-z0-9]|xox[baprs]-|TELEGRAM_[A-Z_]*TOKEN|BOT_[A-Z_]*TOKEN|BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY'
   if rg -n --hidden --glob '!.git/**' --pcre2 "$secret_pattern" .; then
     fail=1
   fi
